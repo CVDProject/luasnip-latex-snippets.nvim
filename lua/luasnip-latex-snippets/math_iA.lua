@@ -155,7 +155,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "<-->", name = "long from", priority = 300 }, "\\longleftrightarrow "),
     
     parse_snippet({ trig = "cap", name = "cap" }, "\\cap "),
-    parse_snippet({ trig = "Cap", name = "bigcap" }, "\\bigcap"),
+    parse_snippet({ trig = "Cap", name = "big cap" }, "\\bigcap"),
     parse_snippet({ trig = "comp", name = "composition" }, "\\circ"),
     parse_snippet({ trig = "norm", name = "norm" }, "\\|$1\\|$0"),
     parse_snippet({ trig = "<>", name = "hokje" }, "\\diamond "),
@@ -169,8 +169,10 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "**", name = "cdot", priority = 100 }, "\\cdot "),
     parse_snippet({ trig = "o+", name = "oplus", }, "\\oplus "),
     parse_snippet({ trig = "ox", name = "otimes", }, "\\otimes "),
+    parse_snippet({ trig = "u+", name = "uplus", }, "\\uplus "),
+    parse_snippet({ trig = "U+", name = "big uplus", }, "\\biguplus "),
     parse_snippet({ trig = "+-", name = "plus minus", }, "\\pm "),
-    parse_snippet({ trig = "-+", name = "minusplus", }, "\\mp "),
+    parse_snippet({ trig = "-+", name = "minus plus", }, "\\mp "),
 
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq "),
 
@@ -179,7 +181,7 @@ function M.retrieve(is_math)
       "\\begin{pmatrix} ${1:x}_${2:1}\\\\ \\vdots\\\\ $1_${2:n} \\end{pmatrix}"
     ),
     parse_snippet({ trig = "ceil", name = "ceil" }, "\\left\\lceil $1 \\right\\rceil $0"),
-    parse_snippet({ trig = "OO", name = "emptyset" }, "\\varnothing"),
+    parse_snippet({ trig = "em", name = "empty set" }, "\\varnothing"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
     parse_snippet({ trig = "QQ", name = "Q" }, "\\mathbb{Q}"),
     parse_snippet({ trig = "ZZ", name = "Z" }, "\\mathbb{Z}"),
@@ -187,7 +189,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "||", name = "mid" }, " \\mid "),
     parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
     parse_snippet({ trig = "cup", name = "cup" }, "\\cup "),
-    parse_snippet({ trig = "Cup", name = "bigcup" }, "\\bigcup"),
+    parse_snippet({ trig = "Cup", name = "big cup" }, "\\bigcup"),
+    parse_snippet({ trig = "scup", name = "square cup", priority = 100 }, "\\cup "),
+    parse_snippet({ trig = "Scup", name = "big square bigcup", priority = 100 }, "\\bigcup"),
     parse_snippet({ trig = "lll", name = "l" }, "\\ell"),
     parse_snippet(
       { trig = "int", name = "integral", priority = 300 },
