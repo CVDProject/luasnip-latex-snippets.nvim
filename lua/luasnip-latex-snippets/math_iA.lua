@@ -113,9 +113,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = ".<", name = "subseteq" }, "\\subseteq "),
     parse_snippet({ trig = ".<!=", name = "subsetneq", priority = 200 }, "\\subsetneq "),
     parse_snippet({ trig = "!.<", name = "nsubseteq", priority = 100 }, "\\nsubseteq "),
-    parse_snippet({ trig = ".>", name = "supseteq" }, "\\subseteq "),
-    parse_snippet({ trig = ".>!=", name = "supsetneq", priority = 200 }, "\\subsetneq "),
-    parse_snippet({ trig = "!.>", name = "nsupseteq", priority = 100 }, "\\nsubseteq "),
+    parse_snippet({ trig = ".>", name = "supseteq" }, "\\supseteq "),
+    parse_snippet({ trig = ".>!=", name = "supsetneq", priority = 200 }, "\\supsetneq "),
+    parse_snippet({ trig = "!.>", name = "nsupseteq", priority = 100 }, "\\nsupseteq "),
 
     parse_snippet({ trig = "<->", name = "leftrightarrow", priority = 200 }, "\\leftrightarrow"),
     parse_snippet({ trig = "...", name = "dots", priority = 100 }, "\\dots "),
@@ -156,8 +156,8 @@ function M.retrieve(is_math)
     
     parse_snippet({ trig = "cap", name = "cap" }, "\\cap "),
     parse_snippet({ trig = "Cap", name = "big cap" }, "\\bigcap"),
-    parse_snippet({ trig = "comp", name = "composition" }, "\\circ"),
-    parse_snippet({ trig = "norm", name = "norm" }, "\\|$1\\|$0"),
+    parse_snippet({ trig = "comp", name = "composition" }, "\\circ "),
+    parse_snippet({ trig = "norm", name = "norm" }, "\\|$1\\| $0"),
     parse_snippet({ trig = "<>", name = "hokje" }, "\\diamond "),
     parse_snippet({ trig = ">>", name = ">>" }, "\\gg"),
     parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
