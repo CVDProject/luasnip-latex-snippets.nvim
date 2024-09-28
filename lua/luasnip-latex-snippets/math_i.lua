@@ -12,12 +12,17 @@ function M.retrieve(is_math)
   }) --[[@as function]]
 
   return {
+    parse_snippet({ trig = "lim", name = "limit" }, "\\lim_{${1:n} \\to ${2:\\infty}} "),
+    parse_snippet({ trig = "limsup", name = "limsup" }, "\\limsup_{${1:n} \\to ${2:\\infty}} "),
+    parse_snippet({ trig = "liminf", name = "liminf" }, "\\liminf_{${1:n} \\to ${2:\\infty}} "),
+
+    parse_snippet({ trig = "overset", name = "overset" }, "\\overset{$1}${2:${TM_SELECTED_TEXT}} $0"),
+    parse_snippet({ trig = "underset", name = "underset" }, "\\underset{$1}${2:${TM_SELECTED_TEXT}} $0"),
+    parse_snippet({ trig = "overbrace", name = "overbrace" }, "\\overbrace{$1:${TM_SELECTED_TEXT}}^{$2} $0"),
+    parse_snippet({ trig = "underbrace", name = "underbrace" }, "\\underbrace{$1:${TM_SELECTED_TEXT}}_{$2} $0"),
+    
     parse_snippet({ trig = "sum", name = "sum" }, "\\sum\\limits_{${1:n}=${2:1}}^{${3:\\infty}} ${4:${TM_SELECTED_TEXT}} $0"),
-
-    parse_snippet({ trig = "lim", name = "limit" }, "\\lim\\limits_{${1:n} \\to ${2:\\infty}} "),
-    parse_snippet({ trig = "limsup", name = "limsup" }, "\\limsup\\limits_{${1:n} \\to ${2:\\infty}} "),
-    parse_snippet({ trig = "liminf", name = "liminf" }, "\\liminf\\limits_{${1:n} \\to ${2:\\infty}} "),
-
+    
     parse_snippet(
       { trig = "prod", name = "product" },
       "\\prod\\limits_{${1:n}=${2:1}}}^{${3:\\infty}} ${4:${TM_SELECTED_TEXT}} $0"
@@ -31,9 +36,7 @@ function M.retrieve(is_math)
       { trig = "ddx", name = "derivative" },
       "\\frac{\\mathrm{d/${1:V}}}{\\mathrm{d${2:x}}} $0"
     ),
-
-    parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
-
+    
     parse_snippet(
       { trig = "lr", name = "left( right)" },
       "\\left( ${1:${TM_SELECTED_TEXT}} \\right) $0"
