@@ -107,11 +107,14 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "xmm", name = "x" }, "x_{m}"),
     parse_snippet({ trig = "R0+", name = "R0+" }, "\\mathbb{R}_0^+"),
 
-    parse_snippet({ trig = "notin", name = "not in " }, "\\not\\in "),
+    parse_snippet({ trig = "notin", name = "not in" }, "\\not\\in "),
 
     parse_snippet({ trig = "cc", name = "subseteq" }, "\\subseteq "),
     parse_snippet({ trig = "cnc", name = "subsetneq" }, "\\subsetneq "),
     parse_snippet({ trig = "ncc", name = "nsubseteq" }, "\\nsubseteq "),
+    parse_snippet({ trig = ">c", name = "supseteq" }, "\\subseteq "),
+    parse_snippet({ trig = ">nc", name = "supsetneq" }, "\\subsetneq "),
+    parse_snippet({ trig = "n>c", name = "nsupseteq" }, "\\nsubseteq "),
 
     parse_snippet({ trig = "<->", name = "leftrightarrow", priority = 200 }, "\\leftrightarrow"),
     parse_snippet({ trig = "...", name = "dots", priority = 100 }, "\\dots "),
@@ -158,6 +161,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "**", name = "cdot", priority = 100 }, "\\cdot "),
     parse_snippet({ trig = "o+", name = "oplus", }, "\\oplus "),
     parse_snippet({ trig = "ox", name = "otimes", }, "\\otimes "),
+    parse_snippet({ trig = "+-", name = "plus minus", }, "\\pm "),
+    parse_snippet({ trig = "-+", name = "minusplus", }, "\\mp "),
 
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq "),
 
@@ -183,7 +188,6 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = "==", name = "equals" }, [[&= $1 \\\\]]),
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
-    parse_snippet({ trig = "compl", name = "complement" }, "^{c}"),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
     parse_snippet({ trig = "^^", name = "superscript" }, "^{$1}$0"),
     parse_snippet({ trig = "=>", name = "short implies" }, "\\Rightarrow"),
@@ -194,6 +198,8 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = "<=", name = "leq" }, "\\le "),
     parse_snippet({ trig = ">=", name = "geq" }, "\\ge "),
+    parse_snippet({ trig = "<!=", name = "leq", priority = 100 }, "\\lne "),
+    parse_snippet({ trig = ">!=", name = "geq", priority = 100 }, "\\gne "),
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1} "),
     parse_snippet({ trig = "ast", name = "dual" }, "^{*} "),
     parse_snippet({ trig = "~~", name = "~" }, "\\sim "),
