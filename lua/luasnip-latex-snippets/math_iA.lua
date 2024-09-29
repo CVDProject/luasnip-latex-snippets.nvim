@@ -111,10 +111,10 @@ function M.retrieve(is_math)
     parse_snippet({ trig = ":_", name = "limits" }, "\\limits_{$1}$0"),    
     
     parse_snippet({ trig = ".<", name = "subseteq" }, "\\subseteq "),
-    parse_snippet({ trig = ".<!=", name = "subsetneq", priority = 200 }, "\\subsetneq "),
+    parse_snippet({ trig = ".!<", name = "subsetneq" }, "\\subsetneq "),
     parse_snippet({ trig = "!.<", name = "nsubseteq", priority = 100 }, "\\nsubseteq "),
     parse_snippet({ trig = ".>", name = "supseteq" }, "\\supseteq "),
-    parse_snippet({ trig = ".>!=", name = "supsetneq", priority = 200 }, "\\supsetneq "),
+    parse_snippet({ trig = ".!>", name = "supsetneq", priority = 100 }, "\\supsetneq "),
     parse_snippet({ trig = "!.>", name = "nsupseteq", priority = 100 }, "\\nsupseteq "),
 
     parse_snippet({ trig = "<->", name = "leftrightarrow", priority = 200 }, "\\leftrightarrow"),
