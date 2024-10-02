@@ -111,13 +111,13 @@ function M.retrieve(is_math)
     parse_snippet({ trig = ":_", name = "limits" }, "\\limits_{$1}$0"),    
     
     parse_snippet({ trig = ".<", name = "subseteq" }, "\\subseteq "),
-    parse_snippet({ trig = ".n<", name = "subsetneq" }, "\\subsetneq "),
-    parse_snippet({ trig = "n.<", name = "nsubseteq", priority = 100 }, "\\nsubseteq "),
+    parse_snippet({ trig = ".!<", name = "subsetneq" }, "\\subsetneq "),
+    parse_snippet({ trig = "!.<", name = "nsubseteq", priority = 100 }, "\\nsubseteq "),
     parse_snippet({ trig = ".>", name = "supseteq" }, "\\supseteq "),
-    parse_snippet({ trig = ".n>", name = "supsetneq", priority = 100 }, "\\supsetneq "),
-    parse_snippet({ trig = "n.>", name = "nsupseteq", priority = 100 }, "\\nsupseteq "),
+    parse_snippet({ trig = ".!>", name = "supsetneq", priority = 100 }, "\\supsetneq "),
+    parse_snippet({ trig = "!.>", name = "nsupseteq", priority = 100 }, "\\nsupseteq "),
 
-    parse_snippet({ trig = "<->", name = "leftrightarrow", priority = 200 }, "\\leftrightarrow"),
+    parse_snippet({ trig = "<->", name = "leftrightarrow", priority = 200 }, "\\leftrightarrow "),
     parse_snippet({ trig = "...", name = "dots", priority = 100 }, "\\dots "),
     parse_snippet({ trig = "c..", name = "cdots" }, "\\cdots "),
     parse_snippet({ trig = "d..", name = "ddots" }, "\\ddots "),
@@ -130,7 +130,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "rij", name = "mrij" }, "(${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0"),
     parse_snippet({ trig = "nab", name = "nabla" }, "\\nabla "),
     parse_snippet({ trig = "del", name = "partial" }, "\\partial "),
-    parse_snippet({ trig = "<!", name = "normal" }, "\\trianglelefteqslant "),
+    parse_snippet({ trig = "<|", name = "normal" }, "\\trianglelefteqslant "),
     parse_snippet({ trig = "flr", name = "floor" }, "\\left\\lfloor $1 \\right\\rfloor$0"),
     
     parse_snippet({ trig = "mcal", name = "mathcal" }, "\\symcal{$1}$0"),
@@ -146,7 +146,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "id", name = "identity" }, "\\operatorname{id}"),
     
     parse_snippet({ trig = "//", name = "Fraction" }, "\\frac{$1}{$2}$0"),
-    parse_snippet({ trig = "wo", name = "setminus" }, "\\setminus"),
+    parse_snippet({ trig = "wo", name = "setminus" }, "\\setminus "),
     parse_snippet({ trig = "->", name = "to", priority = 100 }, "\\to "),
     parse_snippet({ trig = "-->", name = "long to", priority = 200 }, "\\longrightarrow "),
     parse_snippet({ trig = "..>", name = "dashed to", priority = 100 }, "\\rightdasharrow "),
