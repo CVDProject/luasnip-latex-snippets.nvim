@@ -74,13 +74,58 @@ function M.retrieve(is_math)
       "\\left] ${1:${TM_SELECTED_TEXT}} \\right[ $0"
     ),
     parse_snippet(
-      { trig = "lra", name = "leftangle rightangle" },
+      { trig = "lra", name = "left< right>" },
       "\\left< ${1:${TM_SELECTED_TEXT}} \\right>$0"
     ),
-
     parse_snippet(
       { trig = "lrb", name = "left\\{ right\\}" },
       "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\} $0"
+    ),
+
+    
+  parse_snippet(
+      { trig = "big", name = "big( big)" },
+      "\\big( ${1:${TM_SELECTED_TEXT}} \\big) $0"
+    ),
+    parse_snippet(
+      { trig = "big(", name = "big( big)" },
+      "\\big( ${1:${TM_SELECTED_TEXT}} \\big) $0"
+    ),
+    parse_snippet(
+      { trig = "big|", name = "big| big|" },
+      "\\big| ${1:${TM_SELECTED_TEXT}} \\big| $0"
+    ),
+    parse_snippet(
+      { trig = "big||", name = "big|| big||" },
+      "\\big\\| ${1:${TM_SELECTED_TEXT}} \\big\\| $0"
+    ),
+    parse_snippet(
+      { trig = "big{", name = "big{ big}" },
+      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\\\} $0"
+    ),
+    parse_snippet(
+      { trig = "big[", name = "big[ big]" },
+      "\\big[ ${1:${TM_SELECTED_TEXT}} \\big] $0"
+    ),
+    parse_snippet(
+      { trig = "big[[", name = "big[ big[" },
+      "\\big[ ${1:${TM_SELECTED_TEXT}} \\big[ $0"
+    ),
+    parse_snippet(
+      { trig = "big]]", name = "big] big]" },
+      "\\big] ${1:${TM_SELECTED_TEXT}} \\big] $0"
+    ),
+    parse_snippet(
+      { trig = "big][", name = "big] big[" },
+      "\\big] ${1:${TM_SELECTED_TEXT}} \\big[ $0"
+    ),
+    parse_snippet(
+      { trig = "biga", name = "big< big>" },
+      "\\left< ${1:${TM_SELECTED_TEXT}} \\right>$0"
+    ),
+    parse_snippet(
+      { trig = "bigb", name = "big\\{ big\\}" },
+      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\\\} $0"
     ),
   }
 end
