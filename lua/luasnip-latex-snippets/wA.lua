@@ -10,6 +10,7 @@ function M.retrieve(not_math)
   }) --[[@as function]]
 
   return {
+    parse_snippet({ trig = "qt", name = "Quote" }, "``${1:${TM_SELECTED_TEXT}}''$0"),
     parse_snippet({ trig = "bf", name = "Bold Text" }, "\\textbf{${1:${TM_SELECTED_TEXT}}}$0"),
     parse_snippet({ trig = "emph", name = "Emphasize" }, "\\emph{${1:${TM_SELECTED_TEXT}}\\}$0"),
     parse_snippet({ trig = "wemph", name = "Weak Emphasize" }, "\\weakemph{${1:${TM_SELECTED_TEXT}}\\}$0"),
