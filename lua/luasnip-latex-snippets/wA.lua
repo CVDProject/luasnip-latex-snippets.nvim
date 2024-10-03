@@ -14,6 +14,7 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "bf", name = "Bold Text" }, "\\textbf{${1:${TM_SELECTED_TEXT}}}$0"),
     parse_snippet({ trig = "emph", name = "Emphasize" }, "\\emph{${1:${TM_SELECTED_TEXT}}\\}$0"),
     parse_snippet({ trig = "wemph", name = "Weak Emphasize" }, "\\weakemph{${1:${TM_SELECTED_TEXT}}\\}$0"),
+    parse_snippet({ trig = "bemph", name = "Bold Emphasize" }, "\\textbf{weakemph{${1:${TM_SELECTED_TEXT}}\\}}$0"),
     parse_snippet({ trig = "mk", name = "Math" }, "\\( ${1:${TM_SELECTED_TEXT}} \\)$0"),
     parse_snippet({ trig = "dm", name = "Block Math" }, "\\[\n\t${1:${TM_SELECTED_TEXT}}\n.\\] $0"),
   }
