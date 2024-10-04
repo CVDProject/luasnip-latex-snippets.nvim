@@ -198,7 +198,7 @@ function M.retrieve(is_math)
       "\\int ${1:${TM_SELECTED_TEXT}} \\, \\symrm{d}$2 $0"
     ),
 
-    parse_snippet({ trig = "==", name = "equivalent" }, "\\equiv "),
+    parse_snippet({ trig = "===", name = "equivalent" }, "\\equiv "),
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
     parse_snippet({ trig = "^^", name = "superscript" }, "^{$1}$0"),
