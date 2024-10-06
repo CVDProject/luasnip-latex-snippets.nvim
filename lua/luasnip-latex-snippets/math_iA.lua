@@ -141,7 +141,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "mrm", name = "mathrm" }, "\\symrm{$1}$0"),
     parse_snippet({ trig = "msf", name = "mathsf" }, "\\symrm{$1}$0"),
     parse_snippet({ trig = "mtt", name = "mathtt", priority = 100 }, "\\mathtt{$1}$0"),
-    
+
+    parse_snippet({ trig = "dom", name = "image" }, "\\operatorname{dom}"),
     parse_snippet({ trig = "img", name = "image" }, "\\operatorname{img}"),
     parse_snippet({ trig = "id", name = "identity" }, "\\operatorname{id}"),
     
