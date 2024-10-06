@@ -44,7 +44,7 @@ local greek_postfix_completions = function()
 end
 
 local postfix_completions = function()
-  local re = "sin|cos|tan|csc|sec|cot|sinh|cosh|tanh|coth|csch|sech|ln|log|exp|star|perp|ker|det|inf|sup|Tr|diag|rank|det|dim|ker|Im|Re|dom|arg|min|max|sgn|OPT|land|lor"
+  local re = "sin|cos|tan|csc|sec|cot|sinh|cosh|tanh|coth|csch|sech|ln|log|exp|star|perp|ker|det|inf|sup|Tr|diag|rank|det|dim|ker|Im|Re|arg|min|max|sgn|OPT|land|lor"
 
   local build = build_with_priority(postfix_trig, postfix_node)
   return vim.tbl_map(build, vim.split(re, "|"))
