@@ -28,7 +28,7 @@ function M.retrieve(is_math)
 
     parse_snippet(
       { trig = "abs", name = "absolute value \\abs{}" },
-      "\\abs{${1:${TM_SELECTED_TEXT}}}$0"
+      "\\left|{${1:${TM_SELECTED_TEXT}}}\\right|$0"
     ),
   }
 end
