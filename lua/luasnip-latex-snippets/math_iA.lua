@@ -107,7 +107,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "xmm", name = "x" }, "x_{m}"),
     parse_snippet({ trig = "R0+", name = "R0+" }, "\\mathbb{R}_0^+"),
 
-    parse_snippet({ trig = "notin", name = "not in" }, "\\not\\in "),
+    parse_snippet({ trig = "notin", name = "not in" }, "\\notin "),
     parse_snippet({ trig = ":_", name = "limits" }, "\\limits_{$1}$0"),    
     
     parse_snippet({ trig = ".<", name = "subseteq" }, "\\subseteq "),
