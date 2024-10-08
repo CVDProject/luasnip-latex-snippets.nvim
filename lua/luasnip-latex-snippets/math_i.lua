@@ -34,7 +34,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "ddx", name = "derivative" },
-      "\\frac{\\mathrm{d/${1:V}}}{\\mathrm{d${2:x}}} $0"
+      "\\frac{\\symrm{d/${1:V}}}{\\symrm{d${2:x}}} $0"
     ),
     
     parse_snippet(
