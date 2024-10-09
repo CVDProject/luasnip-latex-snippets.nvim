@@ -130,7 +130,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "rij", name = "mrij" }, "(${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0"),
     parse_snippet({ trig = "nab", name = "nabla" }, "\\nabla "),
     parse_snippet({ trig = "del", name = "partial" }, "\\partial "),
-    parse_snippet({ trig = "<|", name = "normal" }, "\\trianglelefteqslant "),
+    parse_snippet({ trig = "<|", name = "normal" }, "\\trianglelefteq "),
     parse_snippet({ trig = "flr", name = "floor" }, "\\left\\lfloor $1 \\right\\rfloor$0"),
     
     parse_snippet({ trig = "mcal", name = "mathcal" }, "\\symcal{$1}$0"),
