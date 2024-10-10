@@ -70,7 +70,7 @@ function M.retrieve(is_math)
         trig = "(%a+)tld",
         wordTrig = false,
         regTrig = true,
-        name = "tld",
+        name = "tilde",
         priority = 100,
       },
       f(function(_, snip)
