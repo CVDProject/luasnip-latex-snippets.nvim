@@ -67,6 +67,18 @@ function M.retrieve(is_math)
     ),
     s(
       {
+        trig = "(%a+)tld",
+        wordTrig = false,
+        regTrig = true,
+        name = "tld",
+        priority = 100,
+      },
+      f(function(_, snip)
+        return string.format("\\tilde{%s}", snip.captures[1])
+      end, {})
+    ),
+    s(
+      {
         trig = "(%a+)ora",
         wordTrig = false,
         regTrig = true,
