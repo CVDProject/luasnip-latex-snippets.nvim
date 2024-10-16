@@ -22,6 +22,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "underbrace", name = "underbrace" }, "\\underbrace{${1:${TM_SELECTED_TEXT}}}_{$2} $0"),
     
     parse_snippet({ trig = "sum", name = "sum" }, "\\sum$1 ${2:${TM_SELECTED_TEXT}} $0"),
+    parse_snippet({ trig = "int", name = "integral" }, "\\int ${1:${TM_SELECTED_TEXT}} \\, \\symrm{d}$0"
+    ),
     
     parse_snippet(
       { trig = "prod", name = "product" },
