@@ -57,7 +57,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "lr{", name = "left{ right}" },
-      "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\} $0"
+      "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\} $0"
     ),
     parse_snippet(
       { trig = "lr[", name = "left[ right]" },
@@ -81,7 +81,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "lrb", name = "left\\{ right\\}" },
-      "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\} $0"
+      "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\} $0"
     ),
     parse_snippet(
       { trig = "lrg", name = "left\\lgroup right\\rgroup" },
@@ -107,7 +107,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "big{", name = "big{ big}" },
-      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\} $0"
+      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\\\} $0"
     ),
     parse_snippet(
       { trig = "big[", name = "big[ big]" },
@@ -131,7 +131,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "bigb", name = "big\\{ big\\}" },
-      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\} $0"
+      "\\big\\{ ${1:${TM_SELECTED_TEXT}} \\big\\\\} $0"
     ),
   }
 end
