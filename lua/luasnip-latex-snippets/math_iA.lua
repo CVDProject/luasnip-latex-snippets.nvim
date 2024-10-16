@@ -206,10 +206,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "scup", name = "square cup", priority = 100 }, "\\cup "),
     parse_snippet({ trig = "Scup", name = "big square bigcup", priority = 100 }, "\\bigcup"),
     parse_snippet({ trig = "lll", name = "l" }, "\\ell"),
-    parse_snippet(
-      { trig = "int", name = "integral", priority = 300 },
-      "\\int ${1:${TM_SELECTED_TEXT}} \\, \\symrm{d}$2 $0"
-    ),
 
     parse_snippet({ trig = "===", name = "equivalent" }, "\\equiv "),
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
