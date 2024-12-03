@@ -65,7 +65,6 @@ function M.retrieve(is_math)
         return string.format("\\hat{%s}", snip.captures[1])
       end, {})
     ),
-    
     s(
       {
         trig = "(%a+)tld",
