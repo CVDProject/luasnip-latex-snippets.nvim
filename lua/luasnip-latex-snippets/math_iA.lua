@@ -154,7 +154,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "msf", name = "mathsf" }, "\\symsf{$1}$0"),
     parse_snippet({ trig = "mtt", name = "mathtt", priority = 100 }, "\\mathtt{$1}$0"),
 
-    parse_snippet({ trig = "dom", name = "image" }, "\\operatorname{dom}"),
+    parse_snippet({ trig = "tld", name = "tilde" }, "\\tilde{$0}$1"),
+    
+    parse_snippet({ trig = "dom", name = "domain" }, "\\operatorname{dom}"),
     parse_snippet({ trig = "img", name = "image" }, "\\operatorname{img}"),
     parse_snippet({ trig = "id", name = "identity" }, "\\operatorname{id}"),
     
@@ -201,6 +203,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "ZZ", name = "Z" }, "\\mathbb{Z}"),
     parse_snippet({ trig = "NN", name = "n" }, "\\mathbb{N}"),
     parse_snippet({ trig = "||", name = "mid" }, " \\mid "),
+    parse_snippet({ trig = "bmat", name = "bmat" }, "\\begin{bmatrix} $1 \\end{bmatrix} $0"),
     parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
     parse_snippet({ trig = "cup", name = "cup" }, "\\cup "),
     parse_snippet({ trig = "Cup", name = "big cup" }, "\\bigcup"),
