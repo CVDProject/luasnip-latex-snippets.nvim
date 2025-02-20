@@ -120,7 +120,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "yjj", name = "yj" }, "y_{j}"),
     parse_snippet({ trig = "xp1", name = "x" }, "x_{n+1}"),
     parse_snippet({ trig = "xmm", name = "x" }, "x_{m}"),
-    parse_snippet({ trig = "R0+", name = "R0+" }, "\\mathbb{R}_0^+"),
 
     parse_snippet({ trig = "notin", name = "not in" }, "\\notin "),
     parse_snippet({ trig = ":_", name = "limits" }, "\\limits_{$1}$0"),    
@@ -186,7 +185,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
     parse_snippet({ trig = "**", name = "cdot", priority = 100 }, "\\cdot "),
     parse_snippet({ trig = "o+", name = "oplus", }, "\\oplus "),
+    parse_snippet({ trig = "O+", name = "bigoplus", }, "\\bigoplus "),
     parse_snippet({ trig = "ox", name = "otimes", }, "\\otimes "),
+    parse_snippet({ trig = "Ox", name = "bigotimes", }, "\\bigotimes "),
     parse_snippet({ trig = "u+", name = "uplus", }, "\\uplus "),
     parse_snippet({ trig = "U+", name = "big uplus", }, "\\biguplus "),
     parse_snippet({ trig = "+-", name = "plus minus", }, "\\pm "),
@@ -235,6 +236,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "ast", name = "dual" }, "^{*} "),
     parse_snippet({ trig = "~~", name = "~" }, "\\sim "),
     parse_snippet({ trig = "conj", name = "conjugate" }, "\\overline{$1}$0"),
+    parse_snippet({ trig = "restr", name = "restriction" }, "{\\upharpoonright}_{$1}$0"),
 
     parse_snippet({ trig = "@a", name = "alpha" }, "\\alpha "),
     parse_snippet({ trig = "@b", name = "beta" }, "\\beta "),
