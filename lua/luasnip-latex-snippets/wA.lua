@@ -18,7 +18,12 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "emph", name = "Emphasize" }, "\\emph{${1:${TM_SELECTED_TEXT}}\\}$0"),
     parse_snippet({ trig = "wemph", name = "Weak Emphasize" }, "\\weakemph{${1:${TM_SELECTED_TEXT}}\\}$0"),
     parse_snippet({ trig = "bemph", name = "Bold Emphasize" }, "\\textbf{weakemph{${1:${TM_SELECTED_TEXT}}\\}}$0"),
-    parse_snippet({ trig = "href", name = "Hypertext Reference" }, "\\hyperref[$2]{$1 \\ref*{$2}}$0"),
+    parse_snippet({ trig = "href", name = "Hypertext Reference" }, "\\hyperref[$2]{$1}$0"),
+    parse_snippet({ trig = "dhref", name = "Definition Reference" }, "\\hyperref[$1]{Definizione \\ref*{$1}}$0"),
+    parse_snippet({ trig = "rhref", name = "Remark Reference" }, "\\hyperref[$1]{Osservazione \\ref*{$1}}$0"),
+    parse_snippet({ trig = "phref", name = "Proposition Reference" }, "\\hyperref[$1]{Proposizione \\ref*{$1}}$0"),
+    parse_snippet({ trig = "thref", name = "Theorem Reference" }, "\\hyperref[$1]{Teorema \\ref*{$1}}$0"),
+    parse_snippet({ trig = "chref", name = "Corollary Reference" }, "\\hyperref[$1]{Corollario \\ref*{$1}}$0"),
     parse_snippet({ trig = "mk", name = "Math" }, "\\( ${1:${TM_SELECTED_TEXT}} \\)$0"),
     parse_snippet({ trig = "dm", name = "Block Math" }, "\\[\n\t${1:${TM_SELECTED_TEXT}}\n.\\] $0"),
   }
