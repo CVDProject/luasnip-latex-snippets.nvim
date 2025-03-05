@@ -21,6 +21,7 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "href", name = "Hypertext Reference" }, "\\hyperref[$2]{$1}$0"),
     parse_snippet({ trig = "dhref", name = "Definition Reference" }, "\\hyperref[d$1]{Definizione \\ref*{d$1}}$0"),
     parse_snippet({ trig = "rhref", name = "Remark Reference" }, "\\hyperref[r$1]{Osservazione \\ref*{r$1}}$0"),
+    parse_snippet({ trig = "ehref", name = "Example Reference" }, "\\hyperref[e$1]{Esempio \\ref*{e$1}}$0"),
     parse_snippet({ trig = "lhref", name = "Lemma Reference" }, "\\hyperref[l$1]{Lemma \\ref*{l$1}}$0"),
     parse_snippet({ trig = "phref", name = "Proposition Reference" }, "\\hyperref[p$1]{Proposizione \\ref*{p$1}}$0"),
     parse_snippet({ trig = "thref", name = "Theorem Reference" }, "\\hyperref[t$1]{Teorema \\ref*{t$1}}$0"),
