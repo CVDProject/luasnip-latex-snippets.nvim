@@ -211,8 +211,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
     parse_snippet({ trig = "cup", name = "cup" }, "\\cup "),
     parse_snippet({ trig = "Cup", name = "big cup" }, "\\bigcup"),
-    parse_snippet({ trig = "scup", name = "square cup", priority = 100 }, "\\cup "),
-    parse_snippet({ trig = "Scup", name = "big square bigcup", priority = 100 }, "\\bigcup"),
+    parse_snippet({ trig = "scup", name = "square cup", priority = 100 }, "\\sqcup "),
+    parse_snippet({ trig = "Scup", name = "big square bigcup", priority = 100 }, "\\bigsqcup"),
     parse_snippet({ trig = "lll", name = "l" }, "\\ell"),
 
     parse_snippet({ trig = "===", name = "equivalent" }, "\\equiv "),
