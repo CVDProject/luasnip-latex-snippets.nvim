@@ -167,7 +167,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "..>", name = "dashed to", priority = 100 }, "\\rightdasharrow "),
     parse_snippet({ trig = "-<", name = "from", priority = 100 }, "\\gets "),
     parse_snippet({ trig = "--<", name = "long from", priority = 200 }, "\\longleftarrow "),
-    parse_snippet({ trig = "<-->", name = "long from", priority = 300 }, "\\longleftrightarrow "),
+    parse_snippet({ trig = "<-->", name = "long leftrightarrow", priority = 300 }, "\\longleftrightarrow "),
     
     parse_snippet({ trig = "cap", name = "cap" }, "\\cap "),
     parse_snippet({ trig = "Cap", name = "big cap" }, "\\bigcap"),
@@ -192,8 +192,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "+-", name = "plus minus", }, "\\pm "),
     parse_snippet({ trig = "-+", name = "minus plus", }, "\\mp "),
 
-    parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq "),
-
     parse_snippet(
       { trig = "cvec", name = "column vector" },
       "\\begin{pmatrix} ${1:x}_${2:1}\\\\ \\vdots\\\\ $1_${2:n} \\end{pmatrix}"
@@ -214,6 +212,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "Scup", name = "big square bigcup", priority = 100 }, "\\bigsqcup"),
     parse_snippet({ trig = "lll", name = "l" }, "\\ell"),
 
+    parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneq "),
+    parse_snippet({ trig = "=:", name = "equals colon (rhs defined as lhs)" }, "\\eqcolon "),
     parse_snippet({ trig = "===", name = "equivalent" }, "\\equiv "),
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
