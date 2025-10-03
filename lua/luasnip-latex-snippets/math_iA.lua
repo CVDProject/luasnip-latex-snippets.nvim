@@ -158,9 +158,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "mtt", name = "mathtt", priority = 100 }, "\\mathtt{$1}$0"),
     parse_snippet({ trig = "mnc", name = "mathunc" }, "\\mathunc{$1}$0"),
     
-    parse_snippet({ trig = "dom", name = "domain" }, "\\operatorname{dom}"),
-    parse_snippet({ trig = "img", name = "image" }, "\\operatorname{img}"),
-    parse_snippet({ trig = "id", name = "identity" }, "\\operatorname{id}"),
+    parse_snippet({ trig = "char", name = "characteristic" }, "\\operatorname{char}"),
     
     parse_snippet({ trig = "//", name = "Fraction" }, "\\frac{$1}{$2}$0"),
     parse_snippet({ trig = "wo", name = "setminus" }, "\\setminus "),
