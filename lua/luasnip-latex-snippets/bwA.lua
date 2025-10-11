@@ -25,7 +25,7 @@ function M.retrieve(not_math)
       { t({ "\\begin{align*}", "\t" }), i(1), t({ "", ".\\end{align*}" }) }
     ),
 
-    parse_snippet({ trig = "---", name = "horizontal line" }, "\\bigskip\n{\\color{commcolor}\\hrule}\n\\bigskip\n\n"),
+    parse_snippet({ trig = "---", name = "horizontal line" }, "\\bigskip\n{\\color{commcolor}\\hrule}\n\\bigskip\n\n\n"),
     parse_snippet({ trig = "beg", name = "begin{} / end{}" }, "\\begin{$1}\n\t$0\n\\end{$1}"),
     parse_snippet({ trig = "case", name = "cases" }, "\\begin{cases}\n\t$1\n\\end{cases}"),
 
