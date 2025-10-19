@@ -191,6 +191,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "U+", name = "big uplus", }, "\\biguplus "),
     parse_snippet({ trig = "+-", name = "plus minus", }, "\\pm "),
     parse_snippet({ trig = "-+", name = "minus plus", }, "\\mp "),
+    parse_snippet({ trig = "and", name = "and", }, "\\land "),
+    parse_snippet({ trig = "orr", name = "or", }, "\\lor "),
 
     parse_snippet(
       { trig = "cvec", name = "column vector" },
