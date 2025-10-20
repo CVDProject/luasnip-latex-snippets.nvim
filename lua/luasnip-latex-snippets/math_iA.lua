@@ -171,7 +171,7 @@ function M.retrieve(is_math)
     
     parse_snippet({ trig = "cap", name = "cap" }, "\\cap "),
     parse_snippet({ trig = "Cap", name = "big cap" }, "\\bigcap"),
-    parse_snippet({ trig = "comp", name = "composition" }, "\\circ "),
+    parse_snippet({ trig = "@@", name = "composition" }, "\\circ "),
     parse_snippet({ trig = "norm", name = "norm" }, "\\|$1\\| $0"),
     parse_snippet({ trig = "<>", name = "hokje" }, "\\diamond "),
     parse_snippet({ trig = ">>", name = ">>" }, "\\gg"),
