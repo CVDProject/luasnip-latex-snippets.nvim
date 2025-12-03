@@ -239,6 +239,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "suc", name = "succeq", priority = 100 }, "\\succcurlyeq "),
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1} "),
     parse_snippet({ trig = "ast", name = "dual" }, "^{*} "),
+    parse_snippet({ trig = "2ast", name = "bidual" }, "^{**} "),
+    parse_snippet({ trig = "3ast", name = "tridual" }, "^{***} "),
     parse_snippet({ trig = "~~", name = "~" }, "\\sim "),
     parse_snippet({ trig = "conj", name = "conjugate" }, "\\overline{$1}$0"),
     parse_snippet({ trig = "restr", name = "restriction" }, "{\\upharpoonright}_{$1}$0"),
