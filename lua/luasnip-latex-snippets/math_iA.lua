@@ -148,7 +148,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "<s|", name = "normal" }, "\\trianglelefteqslant "),
     parse_snippet({ trig = "flr", name = "floor" }, "\\left\\lfloor $1 \\right\\rfloor$0"),
 
-    parse_snippet({ trig = "char", name = "characteristic" }, "\\operatorname{char}($1)$0"),    
+    parse_snippet({ trig = "char", name = "characteristic" }, "\\operatorname{char}$1 $0"),    
     
     parse_snippet({ trig = "mcal", name = "mathcal" }, "\\symcal{$1}$0"),
     parse_snippet({ trig = "mscr", name = "mathscr" }, "\\symscr{$1}$0"),
