@@ -178,8 +178,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
 
     parse_snippet({ trig = "wtt", name = "weak text" }, "\\weaktext{$1}$0"),
+    parse_snippet({ trig = "stt", name = "text subscript" }, "_{\\text{$1}} $0"),
     parse_snippet({ trig = "tt", name = "text" }, "\\text{$1}$0"),
-    parse_snippet({ trig = "stt", name = "text subscript" }, "_\\text{$1} $0"),
 
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
     parse_snippet({ trig = "**", name = "cdot", priority = 100 }, "\\cdot "),
@@ -205,6 +205,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "QQ", name = "Q" }, "\\mathbb{Q}"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
     parse_snippet({ trig = "CC", name = "C" }, "\\mathbb{C}"),
+    parse_snippet({ trig = "FF", name = "FF" }, "\\mathbb{F}"),
+    parse_snippet({ trig = "KK", name = "KK" }, "\\mathbb{K}"),
     parse_snippet({ trig = "||", name = "mid" }, " \\mid "),
     parse_snippet({ trig = "bmat", name = "bmat" }, "\\begin{bmatrix} $1 \\end{bmatrix} $0"),
     parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
@@ -235,11 +237,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "suc", name = "succeq", priority = 100 }, "\\succcurlyeq "),
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1} "),
     parse_snippet({ trig = "ast", name = "dual" }, "^{*} "),
-    parse_snippet({ trig = "aast", name = "bidual", priority = 100 }, "^{**} "),
-    parse_snippet({ trig = "aaast", name = "tridual", priority = 200 }, "^{***} "),
-    parse_snippet({ trig = "sim", name = "~" }, "\\sim "),
-    parse_snippet({ trig = "simeq", name = "≃" }, "\\simeq "),
-    parse_snippet({ trig = "conj", name = "conjugate" }, "\\overline{$1}$0"),
+    parse_snippet({ trig = "sss", name = "~" }, "\\sim "),
+    parse_snippet({ trig = "ss=", name = "≃" }, "\\simeq "),
+    parse_snippet({ trig = "s==", name = "≅" }, "\\cong "),
     parse_snippet({ trig = "restr", name = "restriction" }, "{\\upharpoonright}_{$1}$0"),
 
     parse_snippet({ trig = "@a", name = "alpha" }, "\\alpha "),
