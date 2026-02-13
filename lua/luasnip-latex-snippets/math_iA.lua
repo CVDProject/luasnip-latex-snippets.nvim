@@ -179,8 +179,9 @@ function M.retrieve(is_math)
     parse_snippet({ trig = ">>", name = ">>" }, "\\gg"),
     parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
 
-    parse_snippet({ trig = "wtt", name = "weak text" }, "\\weaktext{$1}$0"),
+    parse_snippet({ trig = "stt", name = "strong text" }, "\\strongtext{$1}$0"),
     parse_snippet({ trig = "_tt", name = "text subscript" }, "_{\\text{$1}} $0"),
+    parse_snippet({ trig = "^tt", name = "text superscript" }, "^{\\text{$1}} $0"),
     parse_snippet({ trig = "tt", name = "text" }, "\\text{$1}$0"),
 
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
