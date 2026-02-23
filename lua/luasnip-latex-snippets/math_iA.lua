@@ -241,8 +241,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1} "),
     parse_snippet({ trig = "ast", name = "dual" }, "^{*} "),
     parse_snippet({ trig = "sss", name = "~" }, "\\sim "),
-    parse_snippet({ trig = "ss=", name = "≃" }, "\\simeq "),
-    parse_snippet({ trig = "s==", name = "≅" }, "\\cong "),
+    parse_snippet({ trig = "=ss", name = "≃" }, "\\simeq "),
+    parse_snippet({ trig = "==s", name = "≅" }, "\\cong "),
     parse_snippet({ trig = "restr", name = "restriction" }, "{\\upharpoonright}_{$1}$0"),
 
     parse_snippet({ trig = "@a", name = "alpha" }, "\\alpha "),
