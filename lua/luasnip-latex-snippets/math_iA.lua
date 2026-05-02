@@ -222,7 +222,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneq "),
     parse_snippet({ trig = "=:", name = "equals colon (rhs defined as lhs)" }, "\\eqcolon "),
     parse_snippet({ trig = "===", name = "equivalent" }, "\\equiv "),
-    parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
+    parse_snippet({ trig = "!=", name = "not equals" }, "\\ne "),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
     parse_snippet({ trig = "^^", name = "superscript" }, "^{$1}$0"),
     parse_snippet({ trig = "=>", name = "short implies" }, "\\Rightarrow"),
